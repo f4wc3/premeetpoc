@@ -1,4 +1,5 @@
 import Amplify, { API, withSSRContext } from "aws-amplify";
+import Head from "next/head";
 import { GetServerSideProps } from "next";
 import React from "react";
 import styles from "../../styles/Home.module.scss";
@@ -65,6 +66,10 @@ export default function Home({ annualreviews = [] }: { annualreviews: AnnualRevi
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Courtiers Annual Review PoC</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.grid}>
         {annualreviews.map((annualreview) => (
           <a href={`/annualreview/${annualreview.id}`} key={annualreview.id}>

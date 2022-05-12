@@ -82,12 +82,11 @@ export default function AnnualReviewPage({ annualreview }: { annualreview: Annua
 
   return (
     <div className={styles.container}>
-      <div>
       <Head>
         <title>Courtiers Annual Review PoC Listing</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div>
       <main>
         <h1 className={styles.title}>Courtiers Annual Review PoC Listing</h1>
         <div className={styles.listingContainer}>
