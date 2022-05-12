@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-premeetpoc-dev-125647-authRole",
+      "UnauthRoleArn": "arn:aws:iam::129636998253:role/amplify-premeetpoc-dev-125647-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::129636998253:role/amplify-premeetpoc-dev-125647-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-premeetpoc-dev-125647-deployment",
+      "UnauthRoleName": "amplify-premeetpoc-dev-125647-unauthRole",
+      "StackName": "amplify-premeetpoc-dev-125647",
+      "StackId": "arn:aws:cloudformation:us-east-1:129636998253:stack/amplify-premeetpoc-dev-125647/45c39db0-d058-11ec-82f5-0eda4ac44dcf",
+      "AmplifyAppId": "do8ltlihw4zc1"
+    },
+    "categories": {
+      "auth": {
+        "premeetpocc42ff7dd": {}
+      }
+    }
+  }
+}

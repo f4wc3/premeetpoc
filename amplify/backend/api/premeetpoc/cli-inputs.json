@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "premeetpoc",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\benfa\\Local Sites\\courtiers-saas\\premeetpoc\\amplify\\backend\\api\\premeetpoc\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authpremeetpocc42ff7dd"
+      }
+    ]
+  }
+}
