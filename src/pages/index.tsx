@@ -68,36 +68,36 @@ export default function Home({ annualreviews = [] }: { annualreviews: AnnualRevi
       <div className={styles.grid}>
         {annualreviews.map((annualreview) => (
           <a href={`/annualreview/${annualreview.id}`} key={annualreview.id}>
-            <h3>{annualreview.firstname} {annualreview.lastname}</h3>
+            <h3 className={styles.title}>{annualreview.firstname} {annualreview.lastname}</h3>
             <p>{annualreview.email}</p>
             <p>{annualreview.ninumber}</p>
           </a>
         ))}
       </div>
-
+      <h1 className={styles.title}>Courtiers Annual Review PoC</h1>
       <Authenticator>
-        <form onSubmit={handleCreateAnnualReview}>
-          <fieldset>
+        <form onSubmit={handleCreateAnnualReview} className={styles.form}>
+          <fieldset className={styles.fieldGroup}>
             <legend>First name</legend>
             <input defaultValue={`John`} name="name" />
           </fieldset>
           
-          <fieldset>
+          <fieldset className={styles.fieldGroup}>
             <legend>Last name</legend>
             <input defaultValue={`Doe`} name="surname" />
           </fieldset>
 
-          <fieldset>
+          <fieldset className={styles.fieldGroup}>
             <legend>Email</legend>
             <textarea defaultValue="email@email.com" name="email" />
           </fieldset>
           
-          <fieldset>
+          <fieldset className={styles.fieldGroup}>
             <legend>NI Number</legend>
             <textarea defaultValue="XXXXXX" name="nationalinsurance" />
           </fieldset>
 
-          <button>Create Annual Review</button>
+          <button className={styles.button}>Create Annual Review</button>
         </form>
       </Authenticator>
     </div>

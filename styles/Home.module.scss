@@ -1,0 +1,63 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form {
+  border-radius: 0.5rem;
+  background-color: rgba(black, 0.1);
+  padding: 1rem;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.fieldGroup {
+  border: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  position: relative;
+
+  legend {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.listing {
+  display: flex;
+
+  p {
+    margin-top: 0;
+    margin-right: 2rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.button {
+  background: black;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+}

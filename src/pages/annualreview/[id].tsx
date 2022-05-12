@@ -82,20 +82,26 @@ export default function AnnualReviewPage({ annualreview }: { annualreview: Annua
 
   return (
     <div className={styles.container}>
+      <div>
       <Head>
-        <title>{annualreview.firstname} – Amplify + Next.js</title>
+        <title>Courtiers Annual Review PoC Listing</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-      <h3>{annualreview.firstname} {annualreview.lastname}</h3>
-            <p>{annualreview.email}</p>
-            <p>{annualreview.ninumber}</p>
+      <main>
+        <h1 className={styles.title}>Courtiers Annual Review PoC Listing</h1>
+        <div className={styles.listing}>
+          <p className={styles.name}>{annualreview.firstname}</p>
+          <p className={styles.name}>{annualreview.lastname}</p>
+          <p>{annualreview.email}</p>
+          <p>{annualreview.ninumber}</p>
+        </div>
       </main>
 
       <button className={styles.footer} onClick={handleDelete}>
-        💥 Delete annualreview
+        💥 Delete annual review
       </button>
+      </div>
     </div>
   );
 }
