@@ -94,12 +94,12 @@ export default function Home({ annualreviews = [] }: { annualreviews: AnnualRevi
 
           <fieldset className={styles.fieldGroup}>
             <legend>Email</legend>
-            <textarea defaultValue="Enter email" name="email" />
+            <input defaultValue="Enter email" name="email" />
           </fieldset>
           
           <fieldset className={styles.fieldGroup}>
             <legend>NI Number</legend>
-            <textarea defaultValue="Enter national insurance number" name="nationalinsurance" />
+            <input defaultValue="Enter national insurance number" name="nationalinsurance" />
           </fieldset>
 
           <button className={styles.button}>Create Annual Review</button>
