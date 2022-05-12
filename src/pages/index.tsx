@@ -79,12 +79,12 @@ export default function Home({ annualreviews = [] }: { annualreviews: AnnualRevi
         <form onSubmit={handleCreateAnnualReview}>
           <fieldset>
             <legend>First name</legend>
-            <input defaultValue={`Today, ${new Date().toLocaleTimeString()}`} name="name" />
+            <input defaultValue={`John`} name="name" />
           </fieldset>
           
           <fieldset>
             <legend>Last name</legend>
-            <input defaultValue={`Today, ${new Date().toLocaleTimeString()}`} name="surname" />
+            <input defaultValue={`Doe`} name="surname" />
           </fieldset>
 
           <fieldset>
