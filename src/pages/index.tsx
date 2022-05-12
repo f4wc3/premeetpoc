@@ -79,22 +79,22 @@ export default function Home({ annualreviews = [] }: { annualreviews: AnnualRevi
         <form onSubmit={handleCreateAnnualReview} className={styles.form}>
           <fieldset className={styles.fieldGroup}>
             <legend>First name</legend>
-            <input defaultValue={`John`} name="name" />
+            <input defaultValue={`Enter name`} name="name" />
           </fieldset>
           
           <fieldset className={styles.fieldGroup}>
             <legend>Last name</legend>
-            <input defaultValue={`Doe`} name="surname" />
+            <input defaultValue={`Enter last name`} name="surname" />
           </fieldset>
 
           <fieldset className={styles.fieldGroup}>
             <legend>Email</legend>
-            <textarea defaultValue="email@email.com" name="email" />
+            <textarea defaultValue="Enter email" name="email" />
           </fieldset>
           
           <fieldset className={styles.fieldGroup}>
             <legend>NI Number</legend>
-            <textarea defaultValue="XXXXXX" name="nationalinsurance" />
+            <textarea defaultValue="Enter national insurance number" name="nationalinsurance" />
           </fieldset>
 
           <button className={styles.button}>Create Annual Review</button>

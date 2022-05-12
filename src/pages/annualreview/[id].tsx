@@ -90,7 +90,7 @@ export default function AnnualReviewPage({ annualreview }: { annualreview: Annua
 
       <main>
         <h1 className={styles.title}>Courtiers Annual Review PoC Listing</h1>
-        <div className={styles.listing}>
+        <div className={styles.listingContainer}>
           <p className={styles.name}>{annualreview.firstname}</p>
           <p className={styles.name}>{annualreview.lastname}</p>
           <p>{annualreview.email}</p>
@@ -98,7 +98,7 @@ export default function AnnualReviewPage({ annualreview }: { annualreview: Annua
         </div>
       </main>
 
-      <button className={styles.footer} onClick={handleDelete}>
+      <button className={styles.button} onClick={handleDelete}>
         💥 Delete annual review
       </button>
       </div>
